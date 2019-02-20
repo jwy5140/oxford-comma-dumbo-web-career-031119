@@ -1,8 +1,7 @@
 def oxford_comma(array)
-  case array.length
-  when 1 
+  if array.length == 1 
     return array[0]
-  when > 1 
+  else 
     return (array[0...array.length-1].join(", ")).concat("and #{array.length}")
   end
 end
